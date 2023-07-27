@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_back_24"
+        android:padding="20dp" />
+
+    <TextView
+        android:id="@+id/txt_pickup_location"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_toEndOf="@id/btn_back"
+        android:text="Pickup Location"
+        android:textColor="@color/colorWhite"
+        android:textSize="27dp"
+        android:gravity="center_vertical"
+        android:paddingStart="30dp"
+        android:fontFamily="@font/sans_regular"
+        />s
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_back"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        >
+        <RadioButton
+            android:id="@+id/pickup_radio"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:foreground="@drawable/ic_location"
+            android:foregroundGravity="center"
+            android:background="@drawable/oval_bg"
+            android:checked="false"
+            />
+        <RadioButton
+            android:id="@+id/drop_radio"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:foreground="@drawable/ic_navigation"
+            android:foregroundGravity="center"
+            android:background="@drawable/oval_bg"
+            android:checked="false"
+            android:layout_marginTop="20dp"
+            />
+        <RadioButton
+            android:id="@+id/courier_radio"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:foreground="@drawable/ic_basket"
+            android:foregroundGravity="center"
+            android:background="@drawable/oval_bg"
+            android:checked="false"
+            android:layout_marginTop="20dp"
+            />
+        <RadioButton
+            android:id="@+id/summary_radio"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:foreground="@drawable/ic_assignment"
+            android:foregroundGravity="center"
+            android:background="@drawable/oval_bg"
+            android:checked="false"
+            android:layout_marginTop="20dp"
+            />
+    </RadioGroup>
+
+    <com.ssoftwares.pickupanddrop.utils.CustomViewpager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/radio_group"
+        android:layout_below="@id/txt_pickup_location"
+        />
+
+</RelativeLayout>

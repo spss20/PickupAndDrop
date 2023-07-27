@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fragment_bg"
+    tools:context=".fragments.PickupFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/map" />
+
+    <EditText
+        android:id="@+id/search_et"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/search_bg"
+        android:layout_margin="15dp"
+        android:drawableStart="@drawable/ic_location"
+        android:drawablePadding="15sp"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+        android:paddingStart="12dp"
+        android:elevation="10dp"
+        android:paddingEnd="12dp"
+        android:fontFamily="@font/sans_regular"
+        android:hint="Enter Pickup Location"
+        />
+</FrameLayout>

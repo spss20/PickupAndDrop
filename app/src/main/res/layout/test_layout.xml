@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fffdb915"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_back_24"
+        android:padding="25dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_toEndOf="@id/btn_back"
+        android:text="Pickup Location"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        android:gravity="center_vertical"
+        android:paddingStart="30dp"
+        android:fontFamily="@font/sans_regular"
+        />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/oval_bg"
+        android:src="@drawable/ic_location"
+        android:layout_below="@id/btn_back"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/nav_1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/oval_bg"
+        android:src="@drawable/ic_location"
+        android:layout_below="@id/btn_back"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/nav_2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/oval_bg"
+        android:src="@drawable/ic_navigation"
+        android:layout_below="@id/nav_1"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+       />
+
+</RelativeLayout>
